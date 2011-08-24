@@ -1,0 +1,18 @@
+SketchCode
+-- Supporting programming as an explorative process of learning and refining --
+
+Abstract
+
+SketchCode is a web-based code editor that sees programming as an explorative  process of learning and refining to simpler patterns. It is informed by cognitive theories of design, and supports an interactive style of writing and running code to reflect on outcomes. It displays programs as a mixture of code and macros with visual representations. The programmer gradually develops macros and their views using HTML and CSS, and uses them to work directly with the emerging high-level concepts in his program.
+
+I will show how cognitive theories of design expose weaknesses in our current programming tools, give a demo of SketchCode, and conclude by showing real-life coding situations that can be improved by a tool like this.
+
+For videos of a related (but different!) project relying on similar concepts, go to http://openendedgroup.com/field/wiki/OverviewBanners2
+
+
+Bio
+
+Siemen Baader
+siemenbaader@gmail.com
+
+I am a hacker, technology designer, freestyle academic and aspiring entrepreneur based in Copenhagen, Denmark. I hold a B.Sc. in Computer Science and Physics from Roskilde University, and am about to complete my M.Sc. in Digital Design and Communications at the IT University of Copenhagen. I apply design processes to map research findings to pragmatic innovations in real-world settings. My recent work focuses on the cognitive aspects of programming. At the moment, I am touring the SF Bay area with SketchCode to meet inspiring people, make connections, and get a feel of entrepreneurial options. I'm always happy to meet like-minded people, so don't hesitate to grab me or email me for a chat!
