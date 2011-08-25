@@ -11,28 +11,34 @@ add_slide = (element)->
   slide_container.append slide
   
 
-
-add_slide("One")
-add_slide("Two")
-add_slide Element "pre", {style: "margin: 30px; background-color: black; color: white;"},["code , \n\ncode"]
-
-
-add_slide(Element 'object', {data: 'file:///home/siemen/thesis/refactor-intentions-27mar2011/sketchcode.xhtml', style: 'width: 100%; height: 768px;'})
-
-# add_slide(Element 'input', {onkeydown: 'event.stopPropagation();event.preventDefault();'} )
-
 viewport.append slide_container
 
 document.addEventListener('keydown', ( (ev)->
-  if ev.keyIdentifier == "Left" and ev.altKey
+  if ev.keyIdentifier == "Left"
     index = Math.max( index - 1, 0)
     slide_container.style.left = - (index * slide_width )+ 'px'
     return
   
-  if ev.keyIdentifier == "Right" and ev.altKey
+  if ev.keyIdentifier == "Right"
     index = Math.min(slides.length - 1, index + 1)
     slide_container.style.left = - (index  * slide_width )+ 'px'
     return
   ), true)
 
 
+
+add_slide Element 'img', {src: 'bio.png'}
+
+add_slide "Two
+
+four three
+
+thee
+"
+
+
+
+add_slide Element "pre", {style: "margin: 30px; background-color: black; color: white;"},["code , \n\ncode"]
+
+
+add_slide Element 'object', {data: 'file:///home/siemen/thesis/integrated/sketchcode.xhtml', style: 'width: 100%; height: 768px;'}

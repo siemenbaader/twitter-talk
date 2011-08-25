@@ -1,6 +1,57 @@
 Outline
 =======
 
+Cover
+Me
+- hacker, tech designer, aspiring entr2epreneur
+- approach me
+- email in footer!
+
+Background
+  - coding is explorative (agile)
+  - reflective practice (Schön)
+  - surprises & re-interpretations
+      - hands-on exploration / affordances
+      case: concurrency, NoSQL
+           
+  - distributed cognition
+    - writing it down
+    - storing & computing in the environment
+    - human: ideas & judgements
+    - pc: calculation & storing
+    
+  - relevance theory
+    - decoding
+    - reference to known concepts (why rails is so powerful)
+      - ostensions: hint the relevant parts
+      - experience: know how to focus
+      - statistics: charts vs. tables
+      
+Demo
+  - 
+
+  - the repl
+  - include slides from report
+  
+  
+  
+Evaluation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - Me
   - GMaps
   - picture
@@ -29,9 +80,23 @@ Scenarios
 [x] alt + arrow key navigation
 [S] embed proto iframe & ensure keys work ok (caps for sliding...)  :impossible:
     - deal w events swallowed
-    
-[ ] px sizes; make work w. mac screens
+[ ] Slide margin to allow focus to leave prototype
+[ ] adjust prototype size for resolution
+
+  
+  
 [ ] markdown helper for slide content
 
 
 [x] slide px sizes fix
+
+# Feedback
+- implement goal-oriented; show problems in current tools
+- show state machines / other informant's concepts
+
+# Demo
+
+- alert string
+- "examples of exploration"
+
+- theories: do not make it credible for prospects
