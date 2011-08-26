@@ -5,11 +5,11 @@ slides = []
 window.index = index = 0
 slide_width = 1024
 
-add_slide = (element)->
-  slide = Element 'slide', {}, [element]
+add_slide = (elements...)->
+  slide = Element 'slide', {}, elements
   slides.push slide
   slide_container.append slide
-  
+
 
 viewport.append slide_container
 
@@ -27,16 +27,21 @@ document.addEventListener('keydown', ( (ev)->
 
 
 
+new_footer = ()->
+  Element('footer', {}, [Markdown("""
+    ![](itu_logo.jpg)
+    <br/>Siemen Baader  <br/>
+    siemenbaader@gmail.com """)])
+
+
 add_slide Element 'img', {src: 'bio.png'}
 
-add_slide "Two
-
-four three
-
-thee
-"
-
-
+add_slide Element('h1', {}, ['Outline']),
+  Element('content', {}, [Markdown("""
+    1. Cognition of Coding
+    2. Demo
+    3. Examples
+  """)]), new_footer()
 
 add_slide Element "pre", {style: "margin: 30px; background-color: black; color: white;"},["code , \n\ncode"]
 
