@@ -34,13 +34,23 @@ new_footer = ()->
     siemenbaader@gmail.com """)])
 
 
-add_slide Element 'img', {src: 'bio.png'}
+# add_slide Element 'img', {src: 'bio.png'}
+
+add_slide Element('h1', {}, ['What?']),
+  Element('content', {}, [Markdown("""
+    ## SketchCode
+    
+    Supporting Programming as a Process of Exploration and Refinement
+  """)]), new_footer()
+
+
 
 add_slide Element('h1', {}, ['Outline']),
   Element('content', {}, [Markdown("""
+    1. Philosophy
     1. Cognition of Coding
-    2. Demo
-    3. Examples
+    2. Concept & Demo
+    3. Perspectives
   """)]), new_footer()
 
 add_slide Element('h1', {}, ['Philosophy']),
@@ -53,84 +63,80 @@ add_slide Element('h1', {}, ['Philosophy']),
     
   """)]), new_footer()
 
-add_slide Element('h1', {}, ['Exploration']),
-  Element('content', {}, [Markdown("""
-    ## Reflective Practice
-    
-    * A cycle of acting & judging outcomes
-    * Surprises frame new understandings ( Re-Interpretations )
-    * New understandings == simpler models (Refactoring)
-    * Sketching: Exploring quickly without fine detail (Spikes)
-
--- Schön (1983), Cross (2006)
-    
-  """)]), new_footer()
-
-add_slide Element('h1', {}, ['Exploration']),
-  Element('content', {}, [Markdown("""
-    ## Reflective Practice in Coding
-    
-    * REPL, refactoring
-    * Coding, running, **debugging**
-    * Designs evolve: 
-      * OS Threads vs event machines
-      * Relational DBs vs NoSQL
-      
-    * Violations
-      * No direct manipulation
-      * indirect cycles
-      * poor sketching material (only valid code can run)
-      * tools enforce plan-driven way
-  """)]), new_footer()
-
 add_slide Element('h1', {}, ['Cognition']),
   Element('content', {}, [Markdown("""
-    ## Distributed Cognition
-    
-    * Thought processes among humans & artifacts
-      * Scrum board, watch, note taking
-    * Human strengths:
-      - creativity, decision making
-    * Computer:
-      - memory
-      - symbolic manipulation
+    * **Reflective Practice**
+      * acting & reflecting
+      * re-interpretations propel designs
+    * **Distributed Cognition**
+      * machines store, compute and display
+      * humans are creative & decide
+    * **Relevance Theory**
+      * coding & decoding
+      * relation to known concepts
+      * ostensions
   """)]), new_footer()
 
-add_slide Element('h1', {}, ['Cognition']),
+
+add_slide Element('h1', {}, ['Problems']),
   Element('content', {}, [Markdown("""
-    ## Distributed Cognition: Violations
-    
-    * link resolving (text)
-    * reason out behaviour
-    * keep track of interdependent factors
-  """)]), new_footer()
+  
+  ## Problems with current tools
+  - Poor direct manipulation
+  - Humans bridge abstractions & resolve links
+  - Syntax constrains relevance
+  - APIs, TDD & RCS favor planning over situated learning
 
-add_slide Element('h1', {}, ['Relevance']),
-  Element('content', {}, [Markdown("""
-    <h2>Relevance Theory</h2>
-   
-    Humans communicate by
-
-    * coding & decoding
-    * reference to known concepts is most efficient (inference)
-    * humans point out relevant parts (ostensions)
-
-
-    In Code
-    
-    * syntax highlighting
-    * DSLs (rails)
-    * Objects to represent concepts
-    * text is always constrained by its grammar
-    
   """)]), new_footer()
 
 
+# Direct Manipulation
+add_slide Element('h1', {}, ['Interact']),
+  Element('content', {}, [Element('img', {src: "file:///home/siemen/thesis/lyx-report/img/entry-points-repl/ui-repl.png", style: 'width: 60%;'})]), new_footer()
 
+# REPL proto??
 
+# Bookkeeping
+add_slide Element('h1', {}, ['Explore']),
+  Element('content', {}, [Element('img', {src: "file:///home/siemen/thesis/lyx-report/img/history.png", style: 'width: 60%; '})]), new_footer()
 
-
-add_slide Element "pre", {style: "margin: 30px; background-color: black; color: white;"},["code , \n\ncode"]
-
-
+# Prototype
 add_slide Element 'object', {data: 'file:///home/siemen/thesis/integrated/sketchcode.xhtml', style: 'width: 100%; height: 768px;'}
+
+# Concepts
+
+add_slide Element('h1', {}, ['Defs']), Element('content', {}, [ Element( 'object', {data: 'file:///home/siemen/thesis/presentations/twitter-26aug2011/concepts.html', style: 'width: 100%; height: 428px; overflow-y: scroll;'})]), new_footer()
+
+# Perspectives
+###
+
+- class overview
+- CPS
+- state machines
+###
+
+add_slide Element('h1', {}, ['Smart Src']), Element('content', {}, [ Element( 'img', {src: 'file:///home/siemen/thesis/presentations/twitter-26aug2011/class-overview.png', style: 'width: 60%;'})]), new_footer()
+
+
+## color picker
+
+add_slide Element('h1', {}, ['Rich UIs']), Element('content', {}, [ Element( 'img', {src: 'file:///home/siemen/thesis/lyx-report/img/concepts/picker-visible.png', style: 'width: 60%;'})]), new_footer()
+
+add_slide Element('h1', {}, ['Abstraction']), Element('content', {}, [ Element( 'object', {data: 'file:///home/siemen/thesis/presentations/twitter-26aug2011/state-code.html', style: 'width: 100%; height: 400px; overflow-y: scroll;'}),
+Element( 'img', {src: 'file:///home/siemen/thesis/presentations/twitter-26aug2011/state-machine-large.png', style: 'position: absolute; top: -50px; left: 380px;'})   ]), new_footer()
+
+
+
+add_slide Element('h1', {}, ['Thx!']),
+  Element('content', {}, [Markdown("""
+  
+  ## Next Steps
+  * Startup
+  * R&D project
+  * Let's talk, tell your friends!
+  
+  siemenbaader@gmail.com
+
+  """)]), new_footer()
+
+

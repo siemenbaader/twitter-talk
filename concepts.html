@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="Generator" content="Kate, the KDE Advanced Text Editor" />
+<title>concepts.js</title>
+</head>
+<body>
+<pre style='color:#f7f7f7;background-color:#000000;'>
+<b><span style='color:#e81c93;'>var</span></b> Fun =  {
+  <span style='color:#ff0000;'>match_text</span>: <span style='color:#37b315;'>&quot;function&quot;</span>,
+  <span style='color:#ff0000;'>menu_view</span>: <span style='color:#ff00ff;'>'&lt;function&gt;&lt;b&gt;function&lt;/b&gt; &lt;field&gt;&amp;#160;&lt;/field&gt;(&lt;field&gt;arg&lt;/field&gt;) {&lt;layouter contenteditable=&quot;true&quot;&gt;&lt;br/&gt;&amp;#160;\n        &lt;/layouter&gt;        &lt;field contenteditable=&quot;true&quot;&gt; &amp;#160; &lt;/field&gt;&lt;br/&gt; }&lt;/function&gt;'</span>,
+  <span style='color:#ff0000;'>Entity</span>: <b><span style='color:#e81c93;'>function</span></b>() {
+    <b><span style='color:#e81c93;'>var</span></b> e = {};
+
+    <span style='color:#008000;'>e</span>.<span style='color:#ffff00;'>fields</span> = [<span style='color:#ff00ff;'>'name'</span>, <span style='color:#ff00ff;'>'arguments'</span>, <span style='color:#ff00ff;'>'body'</span>];
+
+    <span style='color:#008000;'>e</span>.<span style='color:#ffff00;'>view</span> = $(<span style='color:#37b315;'>&quot;&lt;function contenteditable='false'&gt;&lt;b&gt;function&lt;/b&gt;&lt;field contenteditable='true'/&gt;(&lt;field contenteditable='true'/&gt;) {&lt;layouter contenteditable='true'&gt;&lt;br/&gt;&amp;#160;</span><span style='color:#ff00ff;'>\n</span><span style='color:#37b315;'>        &lt;/layouter&gt;</span><span style='color:#ff00ff;'>\n</span><span style='color:#37b315;'>        &lt;field contenteditable='true'/&gt;&lt;br/&gt; }&lt;/function&gt;&quot;</span> )[<span style='color:#0000ff;'>0</span>];
+
+    <span style='color:#008000;'>e.view</span>.<span style='color:#ffff00;'>to_js</span> = <b><span style='color:#e81c93;'>function</span></b>() { 
+      <b><span style='color:#e81c93;'>var</span></b> fields = $(<span style='color:#008000;'>e</span>.<span style='color:#ffff00;'>view</span>).<span style='color:#ffff00;'>find</span>(<span style='color:#37b315;'>&quot;field&quot;</span>);
+      <b><span style='color:#e81c93;'>return</span></b> <span style='color:#37b315;'>&quot;function &quot;</span> + fields[<span style='color:#0000ff;'>0</span>].<span style='color:#ffff00;'>to_js</span>() + <span style='color:#37b315;'>&quot;( &quot;</span> + fields[<span style='color:#0000ff;'>1</span>].<span style='color:#ffff00;'>to_js</span>() +<span style='color:#37b315;'>&quot; ) {</span><span style='color:#ff00ff;'>\n</span><span style='color:#37b315;'>  &quot;</span> + fields[<span style='color:#0000ff;'>2</span>].<span style='color:#ffff00;'>to_js</span>() + <span style='color:#37b315;'>&quot;</span><span style='color:#ff00ff;'>\n</span><span style='color:#37b315;'>}&quot;</span>;
+    }
+
+
+    <b><span style='color:#e81c93;'>return</span></b> e;
+  }
+}
+
+<b><span style='color:#e81c93;'>var</span></b> StateChart = {
+  <span style='color:#ff0000;'>match_text</span>: <span style='color:#37b315;'>&quot;state&quot;</span>,
+  <span style='color:#ff0000;'>menu_view</span>: <span style='color:#ff00ff;'>'&lt;b&gt;State Chart&lt;/b&gt;'</span>,
+  <span style='color:#ff0000;'>Entity</span>: <b><span style='color:#e81c93;'>function</span></b>() {
+    <b><span style='color:#e81c93;'>var</span></b> e = {};
+
+    <span style='color:#008000;'>e</span>.<span style='color:#ffff00;'>fields</span> = [<span style='color:#ff00ff;'>'name'</span>, <span style='color:#ff00ff;'>'arguments'</span>, <span style='color:#ff00ff;'>'body'</span>];
+
+    <span style='color:#008000;'>e</span>.<span style='color:#ffff00;'>view</span> = $(<span style='color:#37b315;'>&quot;&lt;img src='state-chart.svg'/&gt;&quot;</span>)[<span style='color:#0000ff;'>0</span>];
+    
+    <span style='color:#008000;'>e.view</span>.<span style='color:#ffff00;'>to_js</span> = <b><span style='color:#e81c93;'>function</span></b>() { 
+     <b><span style='color:#e81c93;'>return</span></b> <span style='color:#ff00ff;'>'&quot;state: RED&quot;'</span>;
+    }
+
+    <b><span style='color:#e81c93;'>return</span></b> e;
+  }
+};
+
+<span style='color:#008000;'>intentions</span>.<span style='color:#ffff00;'>push</span>( StateChart )
+
+</pre>
+</body>
+</html>

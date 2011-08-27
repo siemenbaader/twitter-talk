@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="Generator" content="Kate, the KDE Advanced Text Editor" />
+<title>Untitled</title>
+</head>
+<body>
+<pre style='color:#f3f3f3;background-color:#000000;'>
+<b><span style='color:#cc13c9;'>if</span></b> ev<span style='color:#16bdff;'>.keyIdentifier</span> <span style='color:#ff9fec;'>==</span> <span style='color:#dd4a4a;'>'Up'</span>
+  
+  <i><span style='color:#c0c0ff;'># Trying to enter lookup with no history</span></i>
+  <b><span style='color:#cc13c9;'>if</span></b> <b><span style='color:#cc13c9;'>not</span></b> log<span style='color:#16bdff;'>.history.lookup_mode</span>() <b><span style='color:#cc13c9;'>and</span></b> log<span style='color:#16bdff;'>.history.length</span> <span style='color:#ff9fec;'>==</span> <span style='color:#0ef3ff;'>0</span>
+    <b><span style='color:#cc13c9;'>return</span></b>
+
+  <i><span style='color:#c0c0ff;'># Entering history lookup, saving old input value</span></i>
+  <b><span style='color:#cc13c9;'>if</span></b> <b><span style='color:#cc13c9;'>not</span></b> log<span style='color:#16bdff;'>.history.lookup_mode</span>()
+    log<span style='color:#16bdff;'>.history.entry_buffer</span> <span style='color:#ff9fec;'>=</span> entry<span style='color:#16bdff;'>.value</span>
+    log<span style='color:#16bdff;'>.history.pointer</span> <span style='color:#ff9fec;'>-=</span> <span style='color:#0ef3ff;'>1</span>
+    log<span style='color:#16bdff;'>.history.current</span>()<span style='color:#16bdff;'>.set_style</span>(<span style='color:#dd4a4a;'>'selected'</span>)
+    entry<span style='color:#16bdff;'>.value</span> <span style='color:#ff9fec;'>=</span> log<span style='color:#16bdff;'>.history.current</span>()<span style='color:#16bdff;'>.statement</span>
+    entry<span style='color:#16bdff;'>.set_style</span> <span style='color:#dd4a4a;'>'normal'</span>
+    <b><span style='color:#cc13c9;'>return</span></b>
+  
+  <i><span style='color:#c0c0ff;'># Reached top of history</span></i>
+  <b><span style='color:#cc13c9;'>if</span></b> log<span style='color:#16bdff;'>.history.lookup_mode</span>() <b><span style='color:#cc13c9;'>and</span></b> log<span style='color:#16bdff;'>.history.pointer</span> <span style='color:#ff9fec;'>==</span> <span style='color:#0ef3ff;'>0</span>
+    <b><span style='color:#cc13c9;'>return</span></b>
+
+  <i><span style='color:#c0c0ff;'># Moving up one item</span></i>
+  <b><span style='color:#cc13c9;'>if</span></b> log<span style='color:#16bdff;'>.history.lookup_mode</span>()
+    log<span style='color:#16bdff;'>.history.current</span>()<span style='color:#16bdff;'>.set_style</span>(<span style='color:#dd4a4a;'>'normal'</span>)
+    log<span style='color:#16bdff;'>.history.pointer</span> <span style='color:#ff9fec;'>-=</span> <span style='color:#0ef3ff;'>1</span>
+    log<span style='color:#16bdff;'>.history.current</span>()<span style='color:#16bdff;'>.set_style</span>(<span style='color:#dd4a4a;'>'selected'</span>)
+    entry<span style='color:#16bdff;'>.value</span> <span style='color:#ff9fec;'>=</span> log<span style='color:#16bdff;'>.history.current</span>()<span style='color:#16bdff;'>.statement</span>
+    log<span style='color:#16bdff;'>.scrollTo</span>( log<span style='color:#16bdff;'>.history.current</span>() )
+    <b><span style='color:#cc13c9;'>return</span></b></pre>
+</body>
+</html>
