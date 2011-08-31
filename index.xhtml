@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<html xmlns='http://www.w3.org/1999/xhtml'>
+  <head>
+    <title> SketchCode </title>
+      <script src="./helpers/helpers.js"/>
+      <script src="./helpers/showdown.js"/> 
+  </head>
+  <body>
+
+    <style> 
+      html,body { background-color: gray; padding: 0; margin: 0;}
+      slide { display: block; float: left; border: 1px solid black; width: 1022px; margin: 0; background-color: white; padding: 0; height: 766px; overflow: hidden; position: relative;}
+      slides { display: block; width: 100000px; position: absolute; -webkit-transition: left 0.3s ease-in-out; padding:0; margin: 0;}
+      .viewport {overflow: hidden; width: 1024px; height: 768px; display: block; position: relative; }
+      
+      /* Slide text Layot */
+      slide h1 { font: 180px "Century Schoolbook L"; font-weight: bold ; position: absolute; top: -190px; left: -40px; float: left; }
+      
+      slide footer { display: block; position: absolute; top: 640px; left: 50px; width: 90%; font-size: 20px;}
+      slide footer img { float: right; width: 100px; top: 0; }
+      slide content { display: block; width: 80%; left: 150px; top: 200px; position: absolute; font-size: 30px;}
+      
+      #clicker {position: absolute; top: 0; left: 0; height: 25px; width: 1020px; opacity: 0;}
+      #clicker:hover { background-color: white; border: 1px solid black; opacity: 1;}
+    </style>
+    <div class='viewport'/>
+    <div id="clicker">Click to focus slideshow</div>
+    <script src="./slides.js"/> 
+
+
+  </body>
+</html>

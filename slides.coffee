@@ -34,8 +34,6 @@ new_footer = ()->
     siemenbaader@gmail.com """)])
 
 
-# add_slide Element 'img', {src: 'bio.png'}
-
 add_slide Element('h1', {}, ['What?']),
   Element('content', {}, [Markdown("""
     ## SketchCode
@@ -92,20 +90,20 @@ add_slide Element('h1', {}, ['Problems']),
 
 # Direct Manipulation
 add_slide Element('h1', {}, ['Interact']),
-  Element('content', {}, [Element('img', {src: "file:///home/siemen/thesis/lyx-report/img/entry-points-repl/ui-repl.png", style: 'width: 60%;'})]), new_footer()
+  Element('content', {}, [Element('img', {src: "ui-repl.png", style: 'width: 60%;'})]), new_footer()
 
 # REPL proto??
 
 # Bookkeeping
 add_slide Element('h1', {}, ['Explore']),
-  Element('content', {}, [Element('img', {src: "file:///home/siemen/thesis/lyx-report/img/history.png", style: 'width: 60%; '})]), new_footer()
+  Element('content', {}, [Element('img', {src: "./history.png", style: 'width: 60%; '})]), new_footer()
 
 # Prototype
-add_slide Element 'object', {data: 'file:///home/siemen/thesis/integrated/sketchcode.xhtml', style: 'width: 100%; height: 768px;'}
+add_slide Element 'object', {data: '../integrated/sketchcode.xhtml', style: 'width: 100%; height: 768px;'}
 
 # Concepts
 
-add_slide Element('h1', {}, ['Defs']), Element('content', {}, [ Element( 'object', {data: 'file:///home/siemen/thesis/presentations/twitter-26aug2011/concepts.html', style: 'width: 100%; height: 428px; overflow-y: scroll;'})]), new_footer()
+add_slide Element('h1', {}, ['Defs']), Element('content', {}, [ Element( 'object', {data: './concepts.html', style: 'width: 100%; height: 428px; overflow-y: scroll;'})]), new_footer()
 
 # Perspectives
 ###
@@ -115,15 +113,15 @@ add_slide Element('h1', {}, ['Defs']), Element('content', {}, [ Element( 'object
 - state machines
 ###
 
-add_slide Element('h1', {}, ['Smart Src']), Element('content', {}, [ Element( 'img', {src: 'file:///home/siemen/thesis/presentations/twitter-26aug2011/class-overview.png', style: 'width: 60%;'})]), new_footer()
+add_slide Element('h1', {}, ['Smart Src']), Element('content', {}, [ Element( 'img', {src: './class-overview.png', style: 'width: 60%;'})]), new_footer()
 
 
 ## color picker
 
-add_slide Element('h1', {}, ['Rich UIs']), Element('content', {}, [ Element( 'img', {src: 'file:///home/siemen/thesis/lyx-report/img/concepts/picker-visible.png', style: 'width: 60%;'})]), new_footer()
+add_slide Element('h1', {}, ['Rich UIs']), Element('content', {}, [ Element( 'img', {src: './picker-visible.png', style: 'width: 60%;'})]), new_footer()
 
-add_slide Element('h1', {}, ['Abstraction']), Element('content', {}, [ Element( 'object', {data: 'file:///home/siemen/thesis/presentations/twitter-26aug2011/state-code.html', style: 'width: 100%; height: 400px; overflow-y: scroll;'}),
-Element( 'img', {src: 'file:///home/siemen/thesis/presentations/twitter-26aug2011/state-machine-large.png', style: 'position: absolute; top: -50px; left: 380px;'})   ]), new_footer()
+add_slide Element('h1', {}, ['Abstraction']), Element('content', {}, [ Element( 'object', {data: './state-code.html', style: 'width: 100%; height: 400px; overflow-y: scroll;'}),
+Element( 'img', {src: './state-machine-large.png', style: 'position: absolute; top: -50px; left: 380px;'})   ]), new_footer()
 
 
 
