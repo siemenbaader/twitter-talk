@@ -27,23 +27,9 @@ document.addEventListener('keydown', (function(ev) {
 new_footer = function() {
   return Element('footer', {}, [Markdown("![](itu_logo.jpg)\n<br/>Siemen Baader  <br/>\nsiemenbaader@gmail.com ")]);
 };
-add_slide(Element('h1', {}, ['What?']), Element('content', {}, [Markdown("## SketchCode\n\nSupporting Programming as a Process of Exploration and Refinement")]), new_footer());
-add_slide(Element('h1', {}, ['Outline']), Element('content', {}, [Markdown("1. Philosophy\n1. Cognition of Coding\n2. Concept & Demo\n3. Perspectives")]), new_footer());
-add_slide(Element('h1', {}, ['Philosophy']), Element('content', {}, [Markdown("## Coding is Exploration\n\n* Understanding of user needs & implementations evolve\n* Agile is a testament of this\n* Design professions deal most explicitly with exploration\n")]), new_footer());
-add_slide(Element('h1', {}, ['Cognition']), Element('content', {}, [Markdown("* **Reflective Practice**\n  * acting & reflecting\n  * re-interpretations propel designs\n* **Distributed Cognition**\n  * machines store, compute and display\n  * humans are creative & decide\n* **Relevance Theory**\n  * coding & decoding\n  * relation to known concepts\n  * ostensions")]), new_footer());
-add_slide(Element('h1', {}, ['Problems']), Element('content', {}, [Markdown("\n## Problems with current tools\n- Poor direct manipulation\n- Humans bridge abstractions & resolve links\n- Syntax constrains relevance\n- APIs, TDD & RCS favor planning over situated learning\n")]), new_footer());
-add_slide(Element('h1', {}, ['Interact']), Element('content', {}, [
-  Element('img', {
-    src: "ui-repl.png",
-    style: 'width: 60%;'
-  })
-]), new_footer());
-add_slide(Element('h1', {}, ['Explore']), Element('content', {}, [
-  Element('img', {
-    src: "./history.png",
-    style: 'width: 60%; '
-  })
-]), new_footer());
+add_slide(Element('h1', {}, ['What?']), Element('content', {}, [Markdown("## SketchCode\n\nTurning code into design material")]), new_footer());
+add_slide(Element('h1', {}, ['Me']), Element('content', {}, [Markdown("\n- Siemen Baader\n- MSc in Digital Design at ITU, CPH\n- looking for new home for SketchCode\n")]), new_footer());
+add_slide(Element('h1', {}, ['Agenda']), Element('content', {}, [Markdown("1. Demo\n1. Process\n2. Relevance Theory\n2. Eval\n3. Implications")]), new_footer());
 add_slide(Element('object', {
   data: '../integrated/sketchcode.xhtml',
   style: 'width: 100%; height: 768px;'
@@ -54,25 +40,9 @@ add_slide(Element('h1', {}, ['Defs']), Element('content', {}, [
     style: 'width: 100%; height: 428px; overflow-y: scroll;'
   })
 ]), new_footer());
-/*
-
-- class overview
-- CPS
-- state machines
-*/
-add_slide(Element('h1', {}, ['Smart Src']), Element('content', {}, [
-  Element('img', {
-    src: './class-overview.png',
-    style: 'width: 60%;'
-  })
-]), new_footer());
-add_slide(Element('h1', {}, ['Rich UIs']), Element('content', {}, [
-  Element('img', {
-    src: './picker-visible.png',
-    style: 'width: 60%;'
-  })
-]), new_footer());
-add_slide(Element('h1', {}, ['Abstraction']), Element('content', {}, [
+add_slide(Element('h1', {}, ['Process']), Element('content', {}, [Markdown("\n- Cognitive theories of designers work\n- Participant observation\n- Prototype\n- Iterate theories & prototype against concrete use cases\n")]), new_footer());
+add_slide(Element('h1', {}, ['Cognition']), Element('content', {}, [Markdown("\n* **Relevance Theory**\n  * coding & decoding\n  * relation to known concepts\n  * ostensions\n  \n* *Reflective Practive*\n* *Distributed Cognition*")]), new_footer());
+add_slide(Element('h1', {}, ['Eval']), Element('content', {}, [
   Element('object', {
     data: './state-code.html',
     style: 'width: 100%; height: 400px; overflow-y: scroll;'
@@ -81,4 +51,11 @@ add_slide(Element('h1', {}, ['Abstraction']), Element('content', {}, [
     style: 'position: absolute; top: -50px; left: 380px;'
   })
 ]), new_footer());
-add_slide(Element('h1', {}, ['Thx!']), Element('content', {}, [Markdown("\n## Next Steps\n* Startup\n* R&D project\n* Let's talk, tell your friends!\n\nsiemenbaader@gmail.com\n")]), new_footer());
+add_slide(Element('h1', {}, ['Eval']), Element('content', {}, [
+  Element('img', {
+    src: './picker-visible.png',
+    style: 'width: 60%;'
+  })
+]), new_footer());
+add_slide(Element('h1', {}, ['Implications']), Element('content', {}, [Markdown("\n* Abstractions scale up\n* Refactoring over planning\n* Direct manipulation in code\n* Macros & UI move to user-land\n* Leverage cultural familarity with web")]), new_footer());
+add_slide(Element('h1', {}, ['Thx!']), Element('content', {}, [Markdown("\n## Put me in touch\n- PhD\n- Startup\n  - MSc's who are hackers, designers & academics?\n- R&D\n- I am around: +45 60 65 70 59!\n")]), new_footer());
