@@ -27,9 +27,8 @@ document.addEventListener('keydown', (function(ev) {
 new_footer = function() {
   return Element('footer', {}, [Markdown("![](itu_logo.jpg)\n<br/>Siemen Baader  <br/>\nsiemenbaader@gmail.com ")]);
 };
-add_slide(Element('h1', {}, ['What?']), Element('content', {}, [Markdown("## SketchCode\n\nTurning code into design material")]), new_footer());
-add_slide(Element('h1', {}, ['Me']), Element('content', {}, [Markdown("\n- Siemen Baader\n- MSc in Digital Design at ITU, CPH\n- looking for new home for SketchCode\n")]), new_footer());
-add_slide(Element('h1', {}, ['Agenda']), Element('content', {}, [Markdown("1. Demo\n1. Process\n2. Relevance Theory\n2. Eval\n3. Implications")]), new_footer());
+add_slide(Element('h1', {}, ['What?']), Element('content', {}, [Markdown("## SketchCode\n\nTurning code into a design material")]), new_footer());
+add_slide(Element('h1', {}, ['Problem']), Element('content', {}, [Markdown("## Design Materials\n  - thinking with your hands\n  - switching levels of abstractions\n  - from concrete to abstract\n  - lateral exploration of alternatives\n  \nUseful for learning & making ill-defined new")]), new_footer());
 add_slide(Element('object', {
   data: '../integrated/sketchcode.xhtml',
   style: 'width: 100%; height: 768px;'
@@ -41,7 +40,9 @@ add_slide(Element('h1', {}, ['Defs']), Element('content', {}, [
   })
 ]), new_footer());
 add_slide(Element('h1', {}, ['Process']), Element('content', {}, [Markdown("\n- Cognitive theories of designers work\n- Participant observation\n- Prototype\n- Iterate theories & prototype against concrete use cases\n")]), new_footer());
-add_slide(Element('h1', {}, ['Cognition']), Element('content', {}, [Markdown("\n* **Relevance Theory**\n  * coding & decoding\n  * relation to known concepts\n  * ostensions\n  \n* *Reflective Practive*\n* *Distributed Cognition*")]), new_footer());
+add_slide(Element('h1', {}, ['Cognition']), Element('content', {}, [Markdown("\n* **Relevance Theory**\n  * coding & decoding\n  * leverage common context\n  * ostensions\n  \n* **In SketchCode:**\n  * decouple abstractions & syntax (less decoding)\n  * rich views (better ostensions)")]), new_footer());
+add_slide(Element('h1', {}, ['Cognition']), Element('content', {}, [Markdown("\n* **Reflective Practice**\n  * move-see-move\n  * surprises & re-interpretations propel process\n  * situated learning\n  \n* **In SketchCode:**\n  * does not enforce macros up-front\n  * macros cheap to make\n  * code gets affordances\n  * beating into shape vs planning\n  * unobtrusive (unplanned) bookkeeping")]), new_footer());
+add_slide(Element('h1', {}, ['Cognition']), Element('content', {}, [Markdown("\n* **Distributed Cognition**\n  * thinking spans persons, artifacts & time\n  * some information easier deduced from environment\n  * humans: decisions & creativity\n  * computer: storage & computation\n  \n* **In SketchCode:**\n  * working at level of mental abstraction\n  * smarter source")]), new_footer());
 add_slide(Element('h1', {}, ['Eval']), Element('content', {}, [
   Element('object', {
     data: './state-code.html',
@@ -54,6 +55,12 @@ add_slide(Element('h1', {}, ['Eval']), Element('content', {}, [
 add_slide(Element('h1', {}, ['Eval']), Element('content', {}, [
   Element('img', {
     src: './picker-visible.png',
+    style: 'width: 60%;'
+  })
+]), new_footer());
+-add_slide(Element('h1', {}, ['Eval']), Element('content', {}, [
+  Element('img', {
+    src: './class-overview.png',
     style: 'width: 60%;'
   })
 ]), new_footer());

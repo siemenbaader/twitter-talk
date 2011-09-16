@@ -38,27 +38,20 @@ add_slide Element('h1', {}, ['What?']),
   Element('content', {}, [Markdown("""
     ## SketchCode
     
-    Turning code into design material
+    Turning code into a design material
   """)]), new_footer()
 
-add_slide Element('h1', {}, ['Me']),
+add_slide Element('h1', {}, ['Problem']),
   Element('content', {}, [Markdown("""
-  
-  - Siemen Baader
-  - MSc in Digital Design at ITU, CPH
-  - looking for new home for SketchCode
-  
+  ## Design Materials
+    - thinking with your hands
+    - switching levels of abstractions
+    - from concrete to abstract
+    - lateral exploration of alternatives
+    
+  Useful for learning & making ill-defined new
   """)]), new_footer()
 
-
-add_slide Element('h1', {}, ['Agenda']),
-  Element('content', {}, [Markdown("""
-    1. Demo
-    1. Process
-    2. Relevance Theory
-    2. Eval
-    3. Implications
-  """)]), new_footer()
 
 # Prototype
 add_slide Element 'object', {data: '../integrated/sketchcode.xhtml', style: 'width: 100%; height: 768px;'}
@@ -66,6 +59,7 @@ add_slide Element 'object', {data: '../integrated/sketchcode.xhtml', style: 'wid
 # Concepts
 
 add_slide Element('h1', {}, ['Defs']), Element('content', {}, [ Element( 'object', {data: './concepts.html', style: 'width: 100%; height: 428px; overflow-y: scroll;'})]), new_footer()
+
 
 add_slide Element('h1', {}, ['Process']),
   Element('content', {}, [Markdown("""
@@ -82,13 +76,47 @@ add_slide Element('h1', {}, ['Cognition']),
 
     * **Relevance Theory**
       * coding & decoding
-      * relation to known concepts
+      * leverage common context
       * ostensions
       
-    * *Reflective Practive*
-    * *Distributed Cognition*
+    * **In SketchCode:**
+      * decouple abstractions & syntax (less decoding)
+      * rich views (better ostensions)
   """)]), new_footer()
 
+add_slide Element('h1', {}, ['Cognition']),
+  Element('content', {}, [Markdown("""
+
+    * **Reflective Practice**
+      * move-see-move
+      * surprises & re-interpretations propel process
+      * situated learning
+      
+    * **In SketchCode:**
+      * does not enforce macros up-front
+      * macros cheap to make
+      * code gets affordances
+      * beating into shape vs planning
+      * unobtrusive (unplanned) bookkeeping
+  """)]), new_footer()
+
+add_slide Element('h1', {}, ['Cognition']),
+  Element('content', {}, [Markdown("""
+
+    * **Distributed Cognition**
+      * thinking spans persons, artifacts & time
+      * some information easier deduced from environment
+      * humans: decisions & creativity
+      * computer: storage & computation
+      
+    * **In SketchCode:**
+      * working at level of mental abstraction
+      * smarter source
+  """)]), new_footer()
+
+
+#     * *Reflective Practive*
+#     * *Distributed Cognition*
 
 
 add_slide Element('h1', {}, ['Eval']), Element('content', {}, [ Element( 'object', {data: './state-code.html', style: 'width: 100%; height: 400px; overflow-y: scroll;'}),
@@ -96,6 +124,8 @@ Element( 'img', {src: './state-machine-large.png', style: 'position: absolute; t
 
 
 add_slide Element('h1', {}, ['Eval']), Element('content', {}, [ Element( 'img', {src: './picker-visible.png', style: 'width: 60%;'})]), new_footer()
+
+-add_slide Element('h1', {}, ['Eval']), Element('content', {}, [ Element( 'img', {src: './class-overview.png', style: 'width: 60%;'})]), new_footer()
 
 
 add_slide Element('h1', {}, ['Implications']),
