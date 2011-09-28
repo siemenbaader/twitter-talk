@@ -1,0 +1,79 @@
+Process characterized by:
+- use of overarching theories
+- dialog with users
+- detailed design data from practice
+  - difference in interviews, feedback and observations!!
+- iteration
+
+Theories
+  - use to code data, re-validate theories
+  - suggest patterns to look at practice trough.
+    - show serious flaws in current systems
+      - mental bridging of abstractions
+      - no constraints, affordances & speedy interaction in code editors
+    
+  - mapping to design guidelines would be a bet - rather use to inquire into practice and see if it makes sense there!
+  - ref practice covers the whole activity cycle, not just the reading phase
+
+Designing
+  - proposals replace & propel
+    - evolution of the REPL
+    - AST
+    - driven by seen value, then refined
+
+Own coding data:
+- object signatures
+- sync/async
+- language in language support
+- syntactic noise
+
+
+Learned from Users
+- culture - node.js
+- what they are capable of (hacking textMate)
+- screenshot of textmate tooltip eval?
+- helped with technical difficulties
+- specific constructs they use
+- observe someone else coding is stronger / cannot as easily watch self. Screen record is async.
+- less than in other projects / am a web hacker myself
+- where to focus
+- more from specific observations than from interviews
+
+User centred process
+- PD is overrated / requires too much commitment from unmotivated user
+
+Learned from technology
+- technical possibilities inspire the design & drive it
+  - DOM in browser
+
+Feedback
+- Destinguish between paradigm & implementation feedback:
+  - qualitative assessment w theories is better
+  - usability methods often address implementations, but let paradigms go free
+
+Show:
+- data collection: screen capture, 
+- shadowing sketch (a bit a user-optimization)
+- evolution: the repl states / the large screen & AST
+- dialogue: the neat & scratchy sketches (fidelity matters)
+
+- Theories vs Users
+  - theories need specific interpretations
+  - users optimize the paradigms they know
+  
+
+- the role of my own data
+  - is it reliable?
+  - interview & interactions to reassure that my problems are of representative nature
+
+
+Conclusion - how to reproduce?
+- be a user or otherwise find the very detailed use cases
+- technical understanding equally important (has propelled design)
+- guidance by theories is an advantage for something new & reducing
+- a craft: routine in interviewing, watching, sketching
+
+
+
+
+

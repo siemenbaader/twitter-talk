@@ -46,7 +46,7 @@ add_slide Element('h1', {}, ['Problem']),
   ## Design Materials
     - thinking with your hands
     - switching levels of abstractions
-    - from concrete to abstract
+    - from specific to abstraction
     - lateral exploration of alternatives
     
   Useful for learning & making ill-defined new
@@ -58,98 +58,169 @@ add_slide Element 'object', {data: '../integrated/sketchcode.xhtml', style: 'wid
 
 # Concepts
 
-add_slide Element('h1', {}, ['Defs']), Element('content', {}, [ Element( 'object', {data: './concepts.html', style: 'width: 100%; height: 428px; overflow-y: scroll;'})]), new_footer()
+add_slide Element('h1', {}, ['Concepts']), Element('content', {}, [ Element( 'object', {data: './concepts.html', style: 'width: 100%; height: 428px; overflow-y: scroll;'})]), new_footer()
+
+add_slide Element('h1', {}, ['REPL']), Element('content', {}, [ Element( 'img', {src: './ui-repl.png', style: 'width: 60%;'})]), new_footer()
+
+
+add_slide Element('h1', {}, ['Example']), Element('content', {}, [ Element( 'img', {src: './picker-visible.png', style: 'width: 60%;'})]), new_footer()
+
+add_slide Element('h1', {}, ['Example']), Element('content', {}, [ Element( 'img', {src: './class-overview.png', style: 'width: 60%;'})]), new_footer()
+
 
 
 add_slide Element('h1', {}, ['Process']),
   Element('content', {}, [Markdown("""
   
+  - Prototyping
   - Cognitive theories of designers work
-  - Participant observation
-  - Prototype
+  - User centered process
   - Iterate theories & prototype against concrete use cases
 
   """)]), new_footer()
+  
+add_slide Element('h1', {}, ['Observations']), Element('content', {}, [ Element( 'img', {src: './observations.png', style: 'width: 80%;'})]), new_footer()
 
-add_slide Element('h1', {}, ['Cognition']),
+# Use Cases
+add_slide Element('h1', {}, ['Use Cases']), Element('content', {}, [ Element( 'img', {src: './shadowing.jpg', style: 'width: 80%;'})]), new_footer()
+
+# Interviews
+
+add_slide Element('h1', {}, ['Interviews']), Element('content', {}, [ Element( 'img', {src: './interview-findings.png', style: 'width: 80%;'})]), new_footer()
+
+add_slide Element('h1', {}, ['Own Code']), Element('content', {}, [ Element( 'object', {data: './state-code.html', style: 'width: 100%; height: 400px; overflow-y: scroll;'}),
+Element( 'img', {src: './state-machine-large.png', style: 'position: absolute; top: -50px; left: 380px;'})   ]), new_footer()
+
+# Dialog
+
+add_slide Element('h1', {}, ['Dialog']),
   Element('content', {}, [Markdown("""
-
-    * **Relevance Theory**
-      * coding & decoding
-      * leverage common context
-      * ostensions
-      
-    * **In SketchCode:**
-      * decouple abstractions & syntax (less decoding)
-      * rich views (better ostensions)
+  
+  - features sketched & discussed
+  - representations matter
+  - informants were not customers
+   
   """)]), new_footer()
 
-add_slide Element('h1', {}, ['Cognition']),
-  Element('content', {}, [Markdown("""
 
-    * **Reflective Practice**
-      * move-see-move
-      * surprises & re-interpretations propel process
-      * situated learning
-      
-    * **In SketchCode:**
-      * does not enforce macros up-front
-      * macros cheap to make
-      * code gets affordances
-      * beating into shape vs planning
-      * unobtrusive (unplanned) bookkeeping
+add_slide Element('h1', {}, ['Balancing']),
+  Element('content', {}, [Markdown("""
+  
+  ## Three poles in innovative design
+  
+  - Users & Current Practice
+  - Technology
+  - Guiding Theory
+   
   """)]), new_footer()
 
-add_slide Element('h1', {}, ['Cognition']),
+add_slide Element('h1', {}, ['Balancing']),
   Element('content', {}, [Markdown("""
-
-    * **Distributed Cognition**
-      * thinking spans persons, artifacts & time
-      * some information easier deduced from environment
-      * humans: decisions & creativity
-      * computer: storage & computation
-      
-    * **In SketchCode:**
-      * working at level of mental abstraction
-      * smarter source
+  
+  ## Users & Current Practice
+    - ethnographic    methods
+       - rich
+       - articulate the tacit
+       - surprisingly fast
+    - being a user provides richest inspiration, but:
+    - ensure adoption (learning & cultural familiarity)
+    - PD not for radical innovation
+    - users suggest optimizations
+    
   """)]), new_footer()
 
+
+add_slide Element('h1', {}, ['Balancing']),
+  Element('content', {}, [Markdown("""
+  
+  ## Technology
+  
+  - *The Driver.*
+  - must be understood in detail
+  - may lead to sub-optimizations
+  - most toolmakers are techies
+
+  """)]), new_footer()
+
+add_slide Element('h1', {}, ['Balancing']),
+  Element('content', {}, [Markdown("""
+  
+  ## Guiding Theories
+  
+  - allow work on paradigms rather than specific fixes
+  - allow testing paradigms vs. implementations
+  - not often used
+  - analytical, not generative
+  - choice & use needs empirical grounding
+  - embarrass current tools
+
+  """)]), new_footer()
+
+
+add_slide Element('h1', {}, ['Onward']),
+  Element('content', {}, [Markdown("""
+  
+  ## If I were to continue...
+  
+  - true iterations for real use
+  - crafts:
+    - observing
+    - sketching
+    - user dialog
+    - balance
+  - critical mass: self-designing system
+  
+  """)]), new_footer()
+
+
+  
+
+# add_slide Element('h1', {}, ['Cognition']),
+#   Element('content', {}, [Markdown("""
+# 
+#     * **Relevance Theory**
+#       * coding & decoding
+#       * leverage common context
+#       * ostensions
+#       
+#     * **In SketchCode:**
+#       * decouple abstractions & syntax (less decoding)
+#       * rich views (better ostensions)
+#   """)]), new_footer()
+# 
+# add_slide Element('h1', {}, ['Cognition']),
+#   Element('content', {}, [Markdown("""
+# 
+#     * **Reflective Practice**
+#       * move-see-move
+#       * surprises & re-interpretations propel process
+#       * situated learning
+#       
+#     * **In SketchCode:**
+#       * does not enforce macros up-front
+#       * macros cheap to make
+#       * code gets affordances
+#       * beating into shape vs planning
+#       * unobtrusive (unplanned) bookkeeping
+#   """)]), new_footer()
+# 
+# add_slide Element('h1', {}, ['Cognition']),
+#   Element('content', {}, [Markdown("""
+# 
+#     * **Distributed Cognition**
+#       * thinking spans persons, artifacts & time
+#       * some information easier deduced from environment
+#       * humans: decisions & creativity
+#       * computer: storage & computation
+#       
+#     * **In SketchCode:**
+#       * working at level of mental abstraction
+#       * smarter source
+#   """)]), new_footer()
+# 
 
 #     * *Reflective Practive*
 #     * *Distributed Cognition*
 
-
-add_slide Element('h1', {}, ['Eval']), Element('content', {}, [ Element( 'object', {data: './state-code.html', style: 'width: 100%; height: 400px; overflow-y: scroll;'}),
-Element( 'img', {src: './state-machine-large.png', style: 'position: absolute; top: -50px; left: 380px;'})   ]), new_footer()
-
-
-add_slide Element('h1', {}, ['Eval']), Element('content', {}, [ Element( 'img', {src: './picker-visible.png', style: 'width: 60%;'})]), new_footer()
-
--add_slide Element('h1', {}, ['Eval']), Element('content', {}, [ Element( 'img', {src: './class-overview.png', style: 'width: 60%;'})]), new_footer()
-
-
-add_slide Element('h1', {}, ['Implications']),
-  Element('content', {}, [Markdown("""
-
-    * Abstractions scale up
-    * Refactoring over planning
-    * Direct manipulation in code
-    * Macros & UI move to user-land
-    * Leverage cultural familarity with web
-  """)]), new_footer()
-
-
-
-add_slide Element('h1', {}, ['Thx!']),
-  Element('content', {}, [Markdown("""
-  
-  ## Put me in touch
-  - PhD
-  - Startup
-    - MSc's who are hackers, designers & academics?
-  - R&D
-  - I am around: +45 60 65 70 59!
-
-  """)]), new_footer()
 
 
