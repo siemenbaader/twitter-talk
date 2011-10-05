@@ -57,6 +57,9 @@ add_slide(Element('h1', {}, ['Example']), Element('content', {}, [
     style: 'width: 60%;'
   })
 ]), new_footer());
+add_slide(Element('h1', {}, ['Cognition']), Element('content', {}, [Markdown("\n* **Relevance Theory**\n  * coding & decoding\n  * leverage common context\n  * ostensions\n  \n* **In SketchCode:**\n  * decouple abstractions & syntax (less decoding)\n  * rich views (better ostensions)")]), new_footer());
+add_slide(Element('h1', {}, ['Cognition']), Element('content', {}, [Markdown("\n* **Reflective Practice**\n  * move-see-move\n  * surprises & re-interpretations propel process\n  * situated learning\n  \n* **In SketchCode:**\n  * does not enforce macros up-front\n  * macros cheap to make\n  * code gets affordances\n  * beating into shape vs planning\n  * unobtrusive (unplanned) bookkeeping")]), new_footer());
+add_slide(Element('h1', {}, ['Cognition']), Element('content', {}, [Markdown("\n* **Distributed Cognition**\n  * thinking spans persons, artifacts & time\n  * some information easier deduced from environment\n  * humans: decisions & creativity\n  * computer: storage & computation\n  \n* **In SketchCode:**\n  * working at level of mental abstraction\n  * smarter source")]), new_footer());
 add_slide(Element('h1', {}, ['Process']), Element('content', {}, [Markdown("\n- Prototyping\n- Cognitive theories of designers work\n- User centered process\n- Iterate theories & prototype against concrete use cases\n")]), new_footer());
 add_slide(Element('h1', {}, ['Observations']), Element('content', {}, [
   Element('img', {

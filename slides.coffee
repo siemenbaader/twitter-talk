@@ -68,6 +68,50 @@ add_slide Element('h1', {}, ['Example']), Element('content', {}, [ Element( 'img
 add_slide Element('h1', {}, ['Example']), Element('content', {}, [ Element( 'img', {src: './class-overview.png', style: 'width: 60%;'})]), new_footer()
 
 
+add_slide Element('h1', {}, ['Cognition']),
+  Element('content', {}, [Markdown("""
+
+    * **Relevance Theory**
+      * coding & decoding
+      * leverage common context
+      * ostensions
+      
+    * **In SketchCode:**
+      * decouple abstractions & syntax (less decoding)
+      * rich views (better ostensions)
+  """)]), new_footer()
+
+add_slide Element('h1', {}, ['Cognition']),
+  Element('content', {}, [Markdown("""
+
+    * **Reflective Practice**
+      * move-see-move
+      * surprises & re-interpretations propel process
+      * situated learning
+      
+    * **In SketchCode:**
+      * does not enforce macros up-front
+      * macros cheap to make
+      * code gets affordances
+      * beating into shape vs planning
+      * unobtrusive (unplanned) bookkeeping
+  """)]), new_footer()
+
+add_slide Element('h1', {}, ['Cognition']),
+  Element('content', {}, [Markdown("""
+
+    * **Distributed Cognition**
+      * thinking spans persons, artifacts & time
+      * some information easier deduced from environment
+      * humans: decisions & creativity
+      * computer: storage & computation
+      
+    * **In SketchCode:**
+      * working at level of mental abstraction
+      * smarter source
+  """)]), new_footer()
+
+
 
 add_slide Element('h1', {}, ['Process']),
   Element('content', {}, [Markdown("""
@@ -172,52 +216,6 @@ add_slide Element('h1', {}, ['Onward']),
   
   """)]), new_footer()
 
-
-  
-
-# add_slide Element('h1', {}, ['Cognition']),
-#   Element('content', {}, [Markdown("""
-# 
-#     * **Relevance Theory**
-#       * coding & decoding
-#       * leverage common context
-#       * ostensions
-#       
-#     * **In SketchCode:**
-#       * decouple abstractions & syntax (less decoding)
-#       * rich views (better ostensions)
-#   """)]), new_footer()
-# 
-# add_slide Element('h1', {}, ['Cognition']),
-#   Element('content', {}, [Markdown("""
-# 
-#     * **Reflective Practice**
-#       * move-see-move
-#       * surprises & re-interpretations propel process
-#       * situated learning
-#       
-#     * **In SketchCode:**
-#       * does not enforce macros up-front
-#       * macros cheap to make
-#       * code gets affordances
-#       * beating into shape vs planning
-#       * unobtrusive (unplanned) bookkeeping
-#   """)]), new_footer()
-# 
-# add_slide Element('h1', {}, ['Cognition']),
-#   Element('content', {}, [Markdown("""
-# 
-#     * **Distributed Cognition**
-#       * thinking spans persons, artifacts & time
-#       * some information easier deduced from environment
-#       * humans: decisions & creativity
-#       * computer: storage & computation
-#       
-#     * **In SketchCode:**
-#       * working at level of mental abstraction
-#       * smarter source
-#   """)]), new_footer()
-# 
 
 #     * *Reflective Practive*
 #     * *Distributed Cognition*
